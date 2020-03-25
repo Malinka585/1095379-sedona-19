@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алина Бернгарт](https://up.htmlacademy.ru/adaptive/19/user/1095379).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Победоносцев](https://htmlacademy.ru/profile/id502263).
 
 ---
 
