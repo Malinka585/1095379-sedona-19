@@ -1,4 +1,34 @@
 .main-nav {
+  position: relative;
   display: flex;
   flex-direction: column;
+
+  // временно для сетки
+
+  min-height: 223px;
 }
+
+.main-nav__close {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  border: none;
+  cursor: pointer;
+  top: 17px;
+  right: 20px;
+  background-color: red;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+
+    /* временно для сетки*/
+    min-height: 56px;
+  }
+
+  .main-nav__close {
+    display: none;
+  }
+}
+

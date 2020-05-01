@@ -1,3 +1,34 @@
+.user-name {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-name__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.user-name__item input {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 18px;
+  padding-right: 18px;
+  width: 192px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #f2f2f2;
+}
+
+.user-name__item:first-of-type input {
+  width: 230px;
+}
+
 .user-name__label {
   font-size: 14px;
   line-height: 26px;
@@ -8,11 +39,31 @@
   background-color: #ffffff;
 }
 
-.user-name__input {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #000000;
+@media (min-width: $tablet-width) {
+  .user-name__item {
+    padding-left: 57px;
+  }
 
-  background-color: #f2f2f2;
+  .user-name__item input {
+    padding-left: 20px;
+    width: 178px;
+  }
+
+  .user-name__item:first-of-type input {
+    width: 215px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-name__item {
+    padding-left: 81px;
+  }
+
+  .user-name__item input {
+    width: 312px;
+  }
+
+  .user-name__item:first-of-type input {
+    width: 350px;
+  }
 }

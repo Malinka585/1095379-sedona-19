@@ -1,0 +1,35 @@
+.video-controls {
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 13px;
+  padding-top: 16px;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+}
+
+.video-controls__button {
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  background-color: red;
+}
+
+.video-controls__button--caption {
+  margin-right: 22px;
+  margin-left: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .video-controls {
+    min-height: 92px;
+    margin-top: -92px;
+    padding-left: 25px;
+    padding-right: 34px;
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}

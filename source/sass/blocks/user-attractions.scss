@@ -1,8 +1,38 @@
+.user-attractions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-attractions__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 24px;
+  padding-right: 37px;
+  width: 100%;
+}
+
 .user-attractions__label {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+}
 
-  background-color: #ffffff;
+@media (min-width: $tablet-width) {
+  .user-attractions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .user-attractions__item {
+    margin-bottom: 32px;
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-attractions {
+    flex-wrap: nowrap;
+  }
 }
