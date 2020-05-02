@@ -1,4 +1,29 @@
-.form legend {
+.form fieldset {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top: 1px solid #e5e5e5;
+  border: none;
+}
+
+.form .form__name {
+  padding-bottom: 3px;
+}
+
+.form input {
+  border: none;
+}
+
+.form__emotions {
+  min-height: 221px;
+}
+
+.form h4 {
+  margin: 0;
+  padding: 0;
+  padding-top: 19px;
+  margin-bottom: 22px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -6,4 +31,139 @@
   text-transform: uppercase;
 
   background-color: #ffffff;
+}
+
+.form__attractions h4 {
+  margin-bottom: 18px;
+}
+
+.form__wrapper span {
+  display: none;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.form__button {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 280px;
+  font-family: "PT-Sans", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .form fieldset {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .form h4 {
+    margin-bottom: 57px;
+    font-size: 21px;
+  }
+
+  .form .form__name {
+    width: 50%;
+
+    & h4 {
+      text-align: left;
+      padding-left: 59px;
+    }
+  }
+
+  .form__contact {
+    width: 100%;
+
+    & h4 {
+      padding-top: 47px;
+      margin-bottom: 18px;
+    }
+  }
+
+  .form__effect {
+    order: -1;
+    width: 50%;
+
+    & h4 {
+      text-align: left;
+    }
+  }
+
+  .form .form__attractions {
+    margin: 0 auto;
+    padding-top: 5px;
+    width: 458px;
+
+    & h4 {
+      margin: 0 auto;
+      margin-bottom: 42px;
+      width: 280px;
+    }
+  }
+
+  .form .form__emotions {
+    padding-top: 17px;
+    width: 100%;
+
+    & h4 {
+      margin-bottom: 56px;
+    }
+  }
+
+  .form__wrapper {
+    margin-bottom: 23px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__wrapper span {
+    display: block;
+    padding-top: 13px;
+  }
+
+  .form__button {
+    margin-right: 162px;
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form .form__name h4 {
+    padding-left: 81px;
+  }
+
+  .form__contact h4 {
+    margin-bottom: 68px;
+    padding-top: 45px;
+  }
+
+  .form__effect h4 {
+    padding-right: 47px;
+    text-align: center;
+  }
+
+  .form .form__attractions {
+    margin: 0;
+    width: 100%;
+  }
+
+  .form__button {
+    margin-right: 319px;
+    width: 480px;
+  }
 }

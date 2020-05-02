@@ -1,8 +1,18 @@
 .offer {
   background-color: #ffffff;
+  text-align: center;
+}
+
+.offer__description {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 26px;
 }
 
 .offer__title {
+  margin: 0;
+  margin-bottom: 19px;
+  padding: 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -11,6 +21,9 @@
 }
 
 .offer__intro {
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -19,11 +32,62 @@
 }
 
 .offer__link {
+  display: block;
+  margin-bottom: 50px;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  width: 100%;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #ffffff;
+  text-decoration: none;
   text-transform: uppercase;
 
   background-color: #81b3d2;
+}
+
+.offer__map {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .offer__description {
+    padding-top: 55px;
+    padding-right: 155px;
+    padding-left: 155px;
+  }
+
+  .offer__title {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .offer__intro {
+    margin-bottom: 44px;
+  }
+
+  .offer__link {
+    margin-bottom: 59px;
+  }
+
+  .offer__map {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offer__description {
+    padding-right: 370px;
+    padding-left: 370px;
+  }
+
+  .offer__intro {
+    margin-bottom: 49px;
+  }
+
+  .offer__link {
+    margin-bottom: 67px;
+  }
 }

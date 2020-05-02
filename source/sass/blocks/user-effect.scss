@@ -1,3 +1,18 @@
+.user-effect {
+  margin: 0;
+  padding: 0;
+  min-height: 207px;
+  list-style: none;
+}
+
+.user-effect__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 13px;
+  padding-left: 31px;
+  width: 100%;
+}
+
 .user-effect__label {
   font-size: 18px;
   line-height: 26px;
@@ -5,4 +20,19 @@
   color: #000000;
 
   background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .user-effect__item {
+    margin-bottom: 19px;
+    padding-bottom: 18px;
+    padding-left: 50px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-effect__item {
+    padding-left: 55px;
+  }
 }

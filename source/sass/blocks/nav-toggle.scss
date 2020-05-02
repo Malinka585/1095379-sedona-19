@@ -1,3 +1,17 @@
 .nav-toggle {
-  background-color: #81b3d2;
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 21px;
+  border: none;
+  cursor: pointer;
+  top: 17px;
+  right: 20px;
+  background-color: red;
+}
+
+@media (min-width: $tablet-width) {
+  .nav-toggle {
+    display: none;
+  }
 }

@@ -1,8 +1,14 @@
 .user-emotions__input {
+  margin-bottom: 46px;
+  padding-top: 10px;
+  width: 100%;
+  padding-bottom: 90px;
+  padding-left: 20px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+  resize: none;
 
   background-color: #f2f2f2;
 }
@@ -15,4 +21,12 @@
   text-transform: uppercase;
 
   background-color: #81b3d2;
+}
+
+@media (min-width: $tablet-width) {
+  .user-emotions__input {
+    margin-bottom: 48px;
+    padding-top: 15px;
+    padding-bottom: 93px;
+  }
 }
