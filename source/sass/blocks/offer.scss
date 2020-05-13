@@ -47,6 +47,16 @@
   background-color: #81b3d2;
 }
 
+.offer__link:hover,
+.offer__link:focus {
+  background-color: #669ec0;
+}
+
+.offer__link:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .offer__map {
   display: block;
 }

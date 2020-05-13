@@ -14,15 +14,22 @@
 .user-name__item input {
   padding-top: 16px;
   padding-bottom: 16px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 192px;
+  min-height: 58px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+  border-radius: 0;
 
   background-color: #f2f2f2;
+}
+
+.user-name__item input:focus {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .user-name__item:first-of-type input {
@@ -45,7 +52,6 @@
   }
 
   .user-name__item input {
-    padding-left: 20px;
     width: 178px;
   }
 
@@ -57,6 +63,10 @@
 @media (min-width: $desktop-width) {
   .user-name__item {
     padding-left: 81px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
   .user-name__item input {

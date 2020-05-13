@@ -1,6 +1,5 @@
 .video-controls {
   display: flex;
-  align-items: center;
   padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 13px;
@@ -15,21 +14,51 @@
   height: 35px;
   border: none;
   cursor: pointer;
-  background-color: red;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.video-controls__button--back {
+  background-image: url("../img/icon-video-replay.svg");
+  background-size: 45%;
 }
 
 .video-controls__button--caption {
   margin-right: 22px;
   margin-left: auto;
+  background-image: url("../img/icon-video-subtitles.svg");
+  background-size: 95%;
+}
+
+.video-controls__button--expand {
+  background-image: url("../img/icon-video-fullscreen.svg");
+  background-size: 55%;
 }
 
 @media (min-width: $tablet-width) {
   .video-controls {
     min-height: 92px;
-    margin-top: -92px;
+    margin-top: -94px;
     padding-left: 25px;
     padding-right: 34px;
-    padding-top: 10px;
+    padding-top: 26px;
+    padding-bottom: 31px;
     background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .video-controls__button {
+    background-color: transparent;
+  }
+
+  .video-controls__button--back {
+    background-image: url("../img/icon-video-replay — desktop.svg");
+  }
+
+  .video-controls__button--caption {
+    background-image: url("../img/icon-video-subtitles — desktop.svg");
+  }
+
+  .video-controls__button--expand {
+    background-image: url("../img/icon-video-fullscreen — desktop.svg");
   }
 }

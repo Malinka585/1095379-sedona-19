@@ -1,18 +1,49 @@
 .form fieldset {
   margin: 0;
   padding: 0;
+  padding-top: 18px;
   padding-left: 20px;
   padding-right: 20px;
-  border-top: 1px solid #e5e5e5;
   border: none;
+  border-top: 1px solid #e5e5e5;
 }
 
 .form .form__name {
   padding-bottom: 3px;
 }
 
+.form .form__effect {
+  padding-bottom: 14px;
+}
+
 .form input {
   border: none;
+  outline: none;
+
+  &::-ms-clear {
+    display: none;
+  }
+}
+
+.form input:hover,
+.form textarea:hover {
+  background-color: #e5e5e5;
+}
+
+.form input:focus,
+.form textarea:focus {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 4px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.form input::placeholder {
+  font-family: "PT-Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .form__emotions {
@@ -22,7 +53,6 @@
 .form h4 {
   margin: 0;
   padding: 0;
-  padding-top: 19px;
   margin-bottom: 22px;
   font-size: 18px;
   line-height: 26px;
@@ -35,6 +65,10 @@
 
 .form__attractions h4 {
   margin-bottom: 18px;
+}
+
+.form__emotions h4 {
+  margin-bottom: 16px;
 }
 
 .form__wrapper span {
@@ -50,6 +84,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   width: 280px;
+  border: none;
   font-family: "PT-Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
@@ -58,6 +93,16 @@
   text-transform: uppercase;
 
   background-color: #81b3d2;
+}
+
+.form__button:hover,
+.form__button:focus {
+  background-color: #669ec0;
+}
+
+.form__button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: $tablet-width) {
@@ -70,6 +115,7 @@
   .form fieldset {
     padding-left: 0;
     padding-right: 0;
+    border: none;
   }
 
   .form h4 {
@@ -86,38 +132,52 @@
     }
   }
 
-  .form__contact {
+  .form .form__contact {
+    padding-top: 37px;
     width: 100%;
 
     & h4 {
-      padding-top: 47px;
       margin-bottom: 18px;
     }
   }
 
   .form__effect {
+    position: relative;
     order: -1;
     width: 50%;
 
     & h4 {
       text-align: left;
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 292px;
+      top: 24px;
+      right: 0;
+      background-color: #dbdbdb;
+    }
   }
 
   .form .form__attractions {
-    margin: 0 auto;
-    padding-top: 5px;
-    width: 458px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 23px;
+    width: 100%;
 
     & h4 {
       margin: 0 auto;
       margin-bottom: 42px;
-      width: 280px;
+      padding-right: 130px;
+      padding-left: 130px;
     }
   }
 
   .form .form__emotions {
-    padding-top: 17px;
+    padding-top: 38px;
     width: 100%;
 
     & h4 {
@@ -127,18 +187,47 @@
 
   .form__wrapper {
     margin-bottom: 23px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
 
   .form__wrapper span {
     display: block;
-    padding-top: 13px;
+    padding-top: 18px;
   }
 
   .form__button {
-    margin-right: 162px;
     width: 324px;
+  }
+
+  .form__contact h4,
+  .form__attractions h4,
+  .form__emotions h4 {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 125px;
+      height: 1px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #dbdbdb;
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+      }
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
   }
 }
 
@@ -147,9 +236,12 @@
     padding-left: 81px;
   }
 
-  .form__contact h4 {
+  .form .form__contact {
+    padding-top: 54px;
+  }
+
+  .form .form__contact h4 {
     margin-bottom: 68px;
-    padding-top: 45px;
   }
 
   .form__effect h4 {
@@ -160,10 +252,23 @@
   .form .form__attractions {
     margin: 0;
     width: 100%;
+
+    & h4 {
+      padding-right: 300px;
+      padding-left: 300px;
+      width: 100%;
+    }
+  }
+
+  .form .form__emotions {
+    padding-top: 36px;
+  }
+
+  .form__wrapper span {
+    padding-top: 17px;
   }
 
   .form__button {
-    margin-right: 319px;
     width: 480px;
   }
 }

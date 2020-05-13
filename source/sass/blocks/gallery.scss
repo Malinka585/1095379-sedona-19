@@ -31,11 +31,6 @@
   text-transform: uppercase;
 }
 
-// .gallery__wrapper {
-//   padding-left: 20px;
-//   padding-right: 20px;
-// }
-
 .gallery__list {
   margin: 0;
   padding: 0;
@@ -84,9 +79,14 @@
   text-transform: none;
 }
 
+.gallery__item-description {
+  position: relative;
+}
+
 .gallery__likes {
+  position: relative;
   margin-top: 6px;
-  margin-left: 30px;
+  padding-left: 36px;
   border: none;
   background-color: transparent;
   font-family: "PT-Sans", "Arial", sans-serif;
@@ -94,6 +94,19 @@
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+}
+
+.gallery__likes--likes::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/icon-like.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -135,7 +148,8 @@
     }
 
     & .gallery__likes {
-      left: 560px;
+      left: auto;
+      right: 14px;
     }
   }
 
@@ -160,12 +174,16 @@
 
   .gallery__likes {
     position: absolute;
-    bottom: 25px;
-    left: 234px;
+    padding-left: 32px;
+    bottom: 8px;
+    left: 239px;
+    top: 21px;
   }
 
-  // .galler__item:first-of-type img {
-  // }
+  .gallery__likes--likes::before {
+    top: 0;
+    left: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -201,13 +219,14 @@
     width: 100%;
 
     & .gallery__likes {
-      left: 1111px;
+      left: auto;
+      right: 16px;
     }
   }
 
-  .gallery__item--description {
+  .gallery__item-description {
     position: absolute;
-    padding-bottom: 19px;
+    padding-bottom: 17px;
     padding-top: 15px;
     width: 100%;
     bottom: 0;
@@ -217,15 +236,23 @@
 
   .gallery__topic {
     padding-top: 0;
+    padding-left: 21px;
     color: #ffffff;
   }
 
   .gallery__item .gallery__intro {
     padding-right: 20px;
+    padding-left: 21px;
     color: #ffffff;
   }
 
   .gallery__likes {
+    bottom: 27px;
+    left: 315px;
     color: #ffffff;
+  }
+
+  .gallery__likes--likes::before {
+    background-image: url("../img/icon-like — desktop.svg");
   }
 }

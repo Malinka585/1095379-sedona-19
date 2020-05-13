@@ -2,37 +2,91 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: left;
 }
 
 .user-attractions__item {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 24px;
-  padding-right: 37px;
+  padding-left: 79px;
   width: 100%;
 }
 
+
 .user-attractions__label {
+  position: relative;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
 }
 
+.user-attractions__label::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: -79px;
+  width: 56px;
+  height: 56px;
+
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.user-attractions__input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -62px;
+  width: 22px;
+  height: 22px;
+
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.user-attractions__label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.user-attractions__input:focus + label::before {
+  background-color: #e5e5e5;
+}
+
+.user-attractions__label:active::before {
+  background-color: #d5d5d5;
+}
+
+.user-attractions__input:checked + label:active::after {
+  opacity: 0.3;
+}
+
+
 @media (min-width: $tablet-width) {
   .user-attractions {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 auto;
+    width: 458px;
   }
 
   .user-attractions__item {
     margin-bottom: 32px;
-    width: 50%;
+    width: 201px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .user-attractions {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .user-attractions__item {
+    width: auto;
   }
 }
