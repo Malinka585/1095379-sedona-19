@@ -9,15 +9,28 @@
 }
 
 .main-nav__close {
-  content: "";
   position: absolute;
   width: 23px;
   height: 23px;
   border: none;
-  cursor: pointer;
   top: 17px;
   right: 20px;
-  background-color: red;
+  outline: none;
+  background-color: transparent;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

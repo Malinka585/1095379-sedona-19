@@ -1,7 +1,18 @@
-.copyright {
+.copyright__link {
   display: flex;
   align-items: center;
   background-color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.copyright__link:hover path,
+.copyright__link:focus path {
+  fill: #81b3d2;
+}
+
+.copyright__link:active path {
+  fill: #b2b2b2;
 }
 
 .copyright__text {

@@ -3,19 +3,48 @@
   margin: 0;
   margin-bottom: 38px;
   padding: 0;
+  width: 157px;
   list-style: none;
 }
 
+.social__item {
+  margin-right: 8px;
+}
+
 .social__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
+  cursor: pointer;
+
+  & path {
+    fill: #ffffff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    & path {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
   .social {
     margin-bottom: 8px;
-    padding-top: 12px;
+    padding-top: 10px;
+  }
+
+  .social__item {
+    margin-right: 6px;
   }
 }

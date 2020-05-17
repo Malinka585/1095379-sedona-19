@@ -1,6 +1,5 @@
 .video-controls {
   display: flex;
-  align-items: center;
   padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 13px;
@@ -14,22 +13,53 @@
   width: 35px;
   height: 35px;
   border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
   cursor: pointer;
-  background-color: red;
+}
+
+.video-controls__button--back {
+  fill: #5c6870;
+  background-size: 45%;
 }
 
 .video-controls__button--caption {
   margin-right: 22px;
   margin-left: auto;
+  fill: #5c6870;
+  background-size: 95%;
+}
+
+.video-controls__button--expand {
+  fill: #5c6870;
+  background-size: 55%;
 }
 
 @media (min-width: $tablet-width) {
   .video-controls {
     min-height: 92px;
-    margin-top: -92px;
+    margin-top: -94px;
     padding-left: 25px;
     padding-right: 34px;
-    padding-top: 10px;
+    padding-top: 26px;
+    padding-bottom: 31px;
     background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .video-controls__button {
+    background-color: transparent;
+  }
+
+  .video-controls__button--back {
+    fill: #ffffff;
+  }
+
+  .video-controls__button--caption {
+    fill: #ffffff;
+  }
+
+  .video-controls__button--expand {
+    fill: #ffffff;
   }
 }
