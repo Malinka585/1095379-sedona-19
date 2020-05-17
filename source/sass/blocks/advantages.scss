@@ -73,6 +73,10 @@
   text-transform: uppercase;
 }
 
+.advantages__intro--hidden {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .advantages {
     padding: 0;
@@ -131,6 +135,10 @@
 
   .advantages__intro {
     padding-top: 9px;
+  }
+
+  .advantages__intro--hidden {
+    display: block;
   }
 }
 

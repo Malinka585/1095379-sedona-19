@@ -13,25 +13,26 @@
   width: 35px;
   height: 35px;
   border: none;
-  cursor: pointer;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .video-controls__button--back {
-  background-image: url("../img/icon-video-replay.svg");
+  fill: #5c6870;
   background-size: 45%;
 }
 
 .video-controls__button--caption {
   margin-right: 22px;
   margin-left: auto;
-  background-image: url("../img/icon-video-subtitles.svg");
+  fill: #5c6870;
   background-size: 95%;
 }
 
 .video-controls__button--expand {
-  background-image: url("../img/icon-video-fullscreen.svg");
+  fill: #5c6870;
   background-size: 55%;
 }
 
@@ -51,14 +52,14 @@
   }
 
   .video-controls__button--back {
-    background-image: url("../img/icon-video-replay — desktop.svg");
+    fill: #ffffff;
   }
 
   .video-controls__button--caption {
-    background-image: url("../img/icon-video-subtitles — desktop.svg");
+    fill: #ffffff;
   }
 
   .video-controls__button--expand {
-    background-image: url("../img/icon-video-fullscreen — desktop.svg");
+    fill: #ffffff;
   }
 }

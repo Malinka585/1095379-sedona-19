@@ -6,7 +6,7 @@
 .offer__description {
   padding-right: 20px;
   padding-left: 20px;
-  padding-top: 26px;
+  padding-top: 25px;
 }
 
 .offer__title {
@@ -43,18 +43,19 @@
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 
   background-color: #81b3d2;
-}
 
-.offer__link:hover,
-.offer__link:focus {
-  background-color: #669ec0;
-}
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
 
-.offer__link:active {
-  background-color: #5496bd;
-  color: rgba(255, 255, 255, 0.3);
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .offer__map {

@@ -18,22 +18,23 @@
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
+  cursor: pointer;
 
   & path {
     fill: #ffffff;
   }
-}
 
-.social__link:hover,
-.social__link:focus {
-  background-color: #669ec0;
-}
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
 
-.social__link:active {
-  background-color: #5496bd;
+  &:active {
+    background-color: #5496bd;
 
-  & path {
-    opacity: 0.3;
+    & path {
+      opacity: 0.3;
+    }
   }
 }
 

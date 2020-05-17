@@ -40,7 +40,7 @@
 }
 
 .gallery__item {
-  padding-top: 21px;
+  padding-top: 22px;
   padding-bottom: 17px;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -86,7 +86,7 @@
 .gallery__likes {
   position: relative;
   margin-top: 6px;
-  padding-left: 36px;
+  padding-left: 17px;
   border: none;
   background-color: transparent;
   font-family: "PT-Sans", "Arial", sans-serif;
@@ -94,13 +94,8 @@
   line-height: 24px;
   font-weight: 700;
   color: #000000;
-}
+  cursor: pointer;
 
-.gallery__likes--likes::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 22px;
   height: 22px;
   background-image: url("../img/icon-like.svg");
@@ -108,6 +103,23 @@
   background-size: cover;
   background-position: center;
 }
+
+.gallery__number {
+  padding-left: 20px;
+}
+
+// .gallery__likes--likes::before {
+//   content: "";
+//   position: absolute;
+//   // top: 0;
+//   // left: 0;
+//   // width: 22px;
+//   // height: 22px;
+//   // background-image: url("../img/icon-like.svg");
+//   // background-repeat: no-repeat;
+//   // background-size: cover;
+//   // background-position: center;
+// }
 
 @media (min-width: $tablet-width) {
   .gallery {
@@ -149,7 +161,7 @@
 
     & .gallery__likes {
       left: auto;
-      right: 14px;
+      right: 62px;
     }
   }
 
@@ -158,7 +170,6 @@
     padding-top: 0;
     width: 50%;
     background-color: #f2f2f2;
-    // height: 267px;
   }
 
   .gallery__topic {
@@ -174,16 +185,16 @@
 
   .gallery__likes {
     position: absolute;
-    padding-left: 32px;
+    padding-left: 13px;
     bottom: 8px;
     left: 239px;
     top: 21px;
   }
 
-  .gallery__likes--likes::before {
-    top: 0;
-    left: 0;
-  }
+  // .gallery__likes--likes::before {
+  //   top: 0;
+  //   left: 0;
+  // }
 }
 
 @media (min-width: $desktop-width) {
@@ -220,7 +231,7 @@
 
     & .gallery__likes {
       left: auto;
-      right: 16px;
+      right: 64px;
     }
   }
 
@@ -250,9 +261,10 @@
     bottom: 27px;
     left: 315px;
     color: #ffffff;
-  }
-
-  .gallery__likes--likes::before {
     background-image: url("../img/icon-like — desktop.svg");
   }
+
+  // .gallery__likes--likes::before {
+  //   background-image: url("../img/icon-like — desktop.svg");
+  // }
 }

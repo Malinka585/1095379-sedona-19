@@ -13,7 +13,6 @@
   width: 23px;
   height: 23px;
   border: none;
-  cursor: pointer;
   top: 17px;
   right: 20px;
   outline: none;
@@ -22,15 +21,16 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
-}
+  cursor: pointer;
 
-.main-nav__close:hover,
-.main-nav__close:focus {
-  opacity: 0.6;
-}
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
 
-.main-nav__close:active {
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

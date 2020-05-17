@@ -1,4 +1,7 @@
 .container {
+  display: block;
+  // Для IE11
+
   width: 320px;
   margin: 0 auto;
 }

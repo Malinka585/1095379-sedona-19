@@ -11,29 +11,25 @@
   display: block;
 }
 
-.popup__successfully {
+.popup--success {
   width: 100%;
-  min-height: 324px;
   left: 50%;
   bottom: 348px;
   transform: translateX(-50%);
 }
 
-.popup__successfully-top {
+.popup__top {
   padding-right: 50px;
   padding-bottom: 35px;
   padding-left: 50px;
 }
 
-.popup__successfully-bottom {
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
+.popup__bottom {
+  padding: 20px;
   background-color: #f2f2f2;
 }
 
-.popup__error {
+.popup--error {
   padding-right: 53px;
   padding-left: 53px;
   width: 100%;
@@ -66,7 +62,7 @@
   text-transform: uppercase;
 }
 
-.popup__error p {
+.popup--error p {
   margin-bottom: 23px;
 }
 
@@ -78,6 +74,7 @@
   line-height: 26px;
   font-weight: 700;
   color: #ffffff;
+  cursor: pointer;
 
   text-transform: uppercase;
   background-color: #81b3d2;
@@ -94,13 +91,16 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-.popup__successfully-button {
+.popup__button {
   width: 100%;
 }
 
-.popup__error-button {
-  padding-left: 77px;
+.popup--error .popup__button {
+  padding-top: 13px;
   padding-right: 77px;
+  padding-bottom: 17px;
+  padding-left: 77px;
+  width: 178px;
 }
 
 @media (min-width: $tablet-width) {
@@ -108,29 +108,31 @@
     padding-top: 61px;
   }
 
-  .popup__successfully {
+  .popup--success {
     width: 641px;
     min-height: 347px;
-    bottom: 366px;
+    top: 50%;
+    transform: translate(-50%, -78%);
   }
 
-  .popup__successfully-top {
+  .popup__top {
     padding-right: 110px;
     padding-bottom: 32px;
     padding-left: 110px;
   }
 
-  .popup__successfully-bottom {
+  .popup__bottom {
     padding-top: 45px;
     padding-right: 92px;
     padding-bottom: 45px;
     padding-left: 92px;
   }
 
-  .popup__error {
+  .popup--error {
     width: 400px;
     min-height: 347px;
-    bottom: 205px;
+    transform: translate(-50%, -32%);
+    top: 50%;
 
     & p {
       margin-bottom: 36px;
@@ -138,16 +140,17 @@
     }
   }
 
-  .popup__error-button {
+  .popup--error .popup__button {
     padding-left: 123px;
     padding-right: 123px;
+    width: 272px;
   }
 
-  .popup__successfully-top h2 {
+  .popup__top h2 {
     font-size: 30px;
   }
 
-  .popup__error h2 {
+  .popup--error h2 {
     padding-right: 23px;
     padding-left: 23px;
     font-size: 30px;
@@ -164,11 +167,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .popup__successfully {
+  .popup--success {
     bottom: 368px;
   }
 
-  .popup__error {
-    bottom: 98px;
+  .popup--error {
+    transform: translate(-50%, 0%);
   }
 }
