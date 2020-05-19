@@ -73,7 +73,7 @@
   text-transform: uppercase;
 }
 
-.advantages__intro--hidden {
+.advantages__line-break {
   display: none;
 }
 
@@ -155,5 +155,9 @@
   .advantages__item:nth-of-type(2) p {
     margin: 0 auto;
     width: 250px;
+  }
+
+  .advantages__line-break {
+    display: block;
   }
 }

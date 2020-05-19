@@ -28,8 +28,12 @@
       </nav>
       <div class="page-header__bottom">
         <button class="nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <a class="page-header__logo" href="index.html" title="Перейти на главную страницу">
-          <img src="img/logo-sedona-mobile.svg" width="103" height="83" alt="Изображение логотипа">
+        <a class="page-header__logo" title="Перейти на главную страницу">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg" width="103" height="83" alt="Изображение логотипа">
+          </picture>
         </a>
         <div class="intro intro--no-index">
           <img src="img/text-sedona.svg" width="280" height="214" alt="Изображение приветствия">
@@ -48,15 +52,15 @@
             <ul class="user-name">
               <li class="user-name__item">
                 <label class="user-name__label" for="name">Имя*:</label>
-                <input class="user-name__input" id="name" type="text" name="name" value="" placeholder="Петр" inputmode required>
+                <input class="user-name__input" id="name" type="text" name="name" value="" placeholder="Петр" inputmode="text" required>
               </li>
               <li class="user-name__item">
                 <label class="user-name__label" for="surname">Фамилия*:</label>
-                <input class="user-name__input" id="surname" type="text" name="surname" value="" placeholder="Иванов" inputmode required>
+                <input class="user-name__input" id="surname" type="text" name="surname" value="" placeholder="Иванов" inputmode="text" required>
               </li>
               <li class="user-name__item">
                 <label class="user-name__label" for="patronymic">Отчество*:</label>
-                <input class="user-name__input" id="patronymic" type="text" name="patronymic" value="" placeholder="Александрович" inputmode required>
+                <input class="user-name__input" id="patronymic" type="text" name="patronymic" value="" placeholder="Александрович" inputmode="text" required>
               </li>
             </ul>
           </fieldset>
@@ -65,11 +69,11 @@
             <ul class="user-contact">
               <li class="user-contact__item user-contact__item--phone">
                 <label class="user-contact__label user-contact__label--phone" for="phone"><span>Контактный</span>телефон*:</label>
-                <input class="user-contact__input" id="phone" type="tel" name="phone" value="" placeholder="Введите телефон" inputmode required>
+                <input class="user-contact__input" id="phone" type="tel" name="phone" value="" placeholder="Введите телефон" inputmode="tel" required>
               </li>
               <li class="user-contact__item user-contact__item--email">
                 <label class="user-contact__label user-contact__label--email" for="e-mail">Электронная почта*:</label>
-                <input class="user-contact__input" id="e-mail" type="email" name="e-mail" value="" placeholder="Введите e-mail" inputmode required>
+                <input class="user-contact__input" id="e-mail" type="email" name="e-mail" value="" placeholder="Введите e-mail" inputmode="email" required>
               </li>
             </ul>
           </fieldset>
@@ -115,7 +119,7 @@
             <h4>Опишите свои эмоции:</h4>
                 <div class="user-emotions">
                   <label class="user-emotions__label visually-hidden" for="text">Текст комментария</label>
-                  <textarea class="user-emotions__input" id="text" name="text" placeholder="Опишите подробно все свои восторги" inputmode></textarea>
+                  <textarea class="user-emotions__input" id="text" name="text" placeholder="Опишите подробно все свои восторги" inputmode="text"></textarea>
                 </div>
           </fieldset>
           <div class="form__wrapper">
@@ -165,7 +169,7 @@
         </div>
       </div>
     </footer>
-    <div class="popup popup--success popup--active">
+    <div class="popup popup--success">
       <div class="popup__top">
         <h2>Ваш отзыв отправлен!</h2>
         <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
@@ -174,7 +178,7 @@
         <button class="popup__button" type="button">Закрыть окно</button>
       </div>
     </div>
-    <div class="popup popup--error popup--active">
+    <div class="popup popup--error">
       <h2>Что-то пошло не так!</h2>
       <p>Проверьте поля, выделенные красным. Скорее всего вы забыли их заполнить.</p>
       <button class="popup__button" type="button">Ок</button>

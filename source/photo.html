@@ -28,8 +28,12 @@
       </nav>
       <div class="page-header__bottom">
         <button class="nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <a class="page-header__logo" href="index.html" title="Перейти на главную страницу">
-          <img src="img/logo-sedona-mobile.svg" width="103" height="83" alt="Изображение логотипа">
+        <a class="page-header__logo" title="Перейти на главную страницу">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg" width="103" height="83" alt="Изображение логотипа">
+          </picture>
         </a>
         <div class="intro intro--no-index">
           <img src="img/text-sedona.svg" width="280" height="214" alt="Изображение приветствия">
@@ -46,35 +50,54 @@
         <div class="gallery__wrapper">
           <ul class="gallery__list">
             <li class="gallery__item">
-              <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Изображение дороги">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Изображение дороги">
+              </picture>
               <div class="gallery__item-description">
                 <h3 class="gallery__topic">Неродные просторы</h3>
                 <p class="gallery__intro">Автор фото: Борис</p>
-                <button class="gallery__likes gallery__likes--likes" type="button" title="Лайк"><span class="gallery__number">1350</span></button>
+                <button class="gallery__likes" type="button" title="Лайк"><span class="gallery__number">1350</span></button>
               </div>
             </li>
             <li class="gallery__item">
-              <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Изображение растительности">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                <img src="img/photo-cactus-mobile@1x.jpg"
+                srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Изображение растительности">
+              </picture>
               <div class="gallery__item-description">
                 <h3 class="gallery__topic">Местная растительность</h3>
                 <p class="gallery__intro">Автор фото: Сергей</p>
-                <button class="gallery__likes gallery__likes--likes" type="button" title="Лайк"><span class="gallery__number">143</span></button>
+                <button class="gallery__likes" type="button" title="Лайк"><span class="gallery__number">143</span></button>
               </div>
             </li>
             <li class="gallery__item">
-              <img src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Изображение дороги в лесу">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                <img src="img/photo-roads-mobile@1x.jpg"
+                srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Изображение дороги в лесу">
+              </picture>
               <div class="gallery__item-description">
                 <h3 class="gallery__topic">Дорога на север</h3>
                 <p class="gallery__intro">Автор фото: Петр</p>
-                <button class="gallery__likes gallery__likes--likes" type="button" title="Лайк"><span class="gallery__number">96</span></button>
+                <button class="gallery__likes" type="button" title="Лайк"><span class="gallery__number">96</span></button>
               </div>
             </li>
             <li class="gallery__item">
-              <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Изображение моста дьявола">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img src="img/photo-bridge-mobile@1x.jpg"
+                srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Изображение моста дьявола">
+              </picture>
               <div class="gallery__item-description">
                 <h3 class="gallery__topic">Мост дьявола</h3>
                 <p class="gallery__intro">Автор фото: Антон</p>
-                <button class="gallery__likes gallery__likes--likes" type="button" title="Лайк"><span class="gallery__number">254</span></button>
+                <button class="gallery__likes" type="button" title="Лайк"><span class="gallery__number">254</span></button>
               </div>
             </li>
           </ul>
@@ -84,7 +107,11 @@
         <h2 class="presentation__title">Все еще сомневаетесь?</h2>
         <p class="presentation__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <div class="presentation__video">
-          <img src="img/video-mobile@1x.jpg" width="320" height="201" alt="Видеопрезентация">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="320" height="201" alt="Видеопрезентация">
+          </picture>
           <div class="presentation__wrapper">
             <div class="presentation__range">
               <div class="presentation__scale">
