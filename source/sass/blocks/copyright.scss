@@ -6,12 +6,12 @@
   cursor: pointer;
 }
 
-.copyright__link:hover path,
-.copyright__link:focus path {
+.copyright__link:hover svg,
+.copyright__link:focus svg {
   fill: #81b3d2;
 }
 
-.copyright__link:active path {
+.copyright__link:active svg {
   fill: #b2b2b2;
 }
 

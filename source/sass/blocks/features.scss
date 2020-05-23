@@ -64,6 +64,10 @@
   padding-top: 56px;
 }
 
+.features__line-braek {
+  display: none;
+}
+
 .features__item--reverse .features__item-wrapper {
   padding-top: 36px;
 }
@@ -162,6 +166,10 @@
     min-height: 256px;
   }
 
+  .features__line-braek {
+    display: block;
+  }
+
   .features__item--reverse .features__item-wrapper {
     padding-top: 44px;
   }
@@ -169,7 +177,6 @@
   .features__title {
     margin: 0 auto;
     margin-bottom: 7px;
-    width: 150px;
     font-size: 21px;
   }
 
