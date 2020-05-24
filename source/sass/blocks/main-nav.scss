@@ -1,11 +1,7 @@
 .main-nav {
   display: none;
   position: relative;
-  // display: flex;
   flex-direction: column;
-
-  // временно для сетки
-
   min-height: 223px;
 }
 
@@ -45,7 +41,6 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     display: flex;
-    /* временно для сетки*/
     min-height: 56px;
   }
 
