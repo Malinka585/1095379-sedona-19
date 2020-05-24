@@ -7,12 +7,23 @@
   background-repeat: no-repeat;
   background-position: bottom, center;
   background-size: 100% auto, cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom, center;
+    background-size: 100% auto, cover;
+  }
 }
 
 .intro--no-index {
   padding-top: 50px;
   text-align: center;
   padding-bottom: 60px;
+  background-position: bottom, bottom;
+  background-size: 100% auto, 242%;
+
+  // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)
 }
 
 .intro--no-index img {
@@ -28,6 +39,12 @@
     background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
     background-position: bottom, center;
     background-size: 100%, cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
+      background-position: bottom, center;
+      background-size: 100%, cover;
+    }
   }
 
   .intro img {
@@ -37,6 +54,7 @@
   .intro--no-index {
     padding-top: 95px;
     padding-bottom: 115px;
+    background-position: bottom, bottom;
   }
 
   .intro--no-index img {
@@ -50,12 +68,18 @@
     padding-right: 368px;
     padding-left: 368px;
     padding-top: 79px;
-    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
     background-position: bottom, center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@2x.jpg");
+      background-position: bottom, center;
+    }
   }
 
   .intro--no-index {
     padding-top: 101px;
     padding-bottom: 120px;
+    background-position: bottom, bottom;
   }
 }
