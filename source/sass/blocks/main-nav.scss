@@ -1,11 +1,16 @@
 .main-nav {
+  display: none;
   position: relative;
-  display: flex;
+  // display: flex;
   flex-direction: column;
 
   // временно для сетки
 
   min-height: 223px;
+}
+
+.page-header--no-js .main-nav {
+  display: flex;
 }
 
 .main-nav__close {
@@ -33,9 +38,13 @@
   }
 }
 
+.page-header--no-js .main-nav__close {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
-
+    display: flex;
     /* временно для сетки*/
     min-height: 56px;
   }
