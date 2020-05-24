@@ -20,7 +20,7 @@
   background-color: #81b3d2;
   cursor: pointer;
 
-  & path {
+  & svg {
     fill: #ffffff;
   }
 
@@ -32,7 +32,7 @@
   &:active {
     background-color: #5496bd;
 
-    & path {
+    & svg {
       opacity: 0.3;
     }
   }

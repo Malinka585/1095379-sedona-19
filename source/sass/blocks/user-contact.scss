@@ -57,11 +57,11 @@
 }
 
 .user-contact__item--phone::before {
-  background-image: url("../img/icon-phone.svg");
+  background-image: url("../img/phone.svg");
 }
 
 .user-contact__item--email::before {
-  background-image: url("../img/icon-mail.svg");
+  background-image: url("../img/mail.svg");
 }
 
 @media (min-width: $tablet-width) {
