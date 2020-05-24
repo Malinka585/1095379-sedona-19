@@ -105,6 +105,10 @@
   .offer__map {
     width: 100%;
     height: 350px;
+
+    & p {
+      left: 100%;
+    }
   }
 }
 
