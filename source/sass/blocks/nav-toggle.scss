@@ -24,6 +24,10 @@
   }
 }
 
+.page-header--no-js .nav-toggle {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .nav-toggle {
     display: none;
